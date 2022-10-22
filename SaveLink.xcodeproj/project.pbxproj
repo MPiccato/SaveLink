@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		F31526B5290476DF0060490A /* RegisterEmailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31526B4290476DF0060490A /* RegisterEmailView.swift */; };
+		F31526B7290478710060490A /* DismissView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31526B6290478710060490A /* DismissView.swift */; };
 		F33F03A729044F1100AFAAEF /* SaveLinkApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33F03A629044F1100AFAAEF /* SaveLinkApp.swift */; };
 		F33F03A929044F1100AFAAEF /* AuthenticationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33F03A829044F1100AFAAEF /* AuthenticationView.swift */; };
 		F33F03AB29044F1300AFAAEF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F33F03AA29044F1300AFAAEF /* Assets.xcassets */; };
@@ -40,6 +41,7 @@
 
 /* Begin PBXFileReference section */
 		F31526B4290476DF0060490A /* RegisterEmailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterEmailView.swift; sourceTree = "<group>"; };
+		F31526B6290478710060490A /* DismissView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DismissView.swift; sourceTree = "<group>"; };
 		F33F03A329044F1100AFAAEF /* SaveLink.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SaveLink.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F33F03A629044F1100AFAAEF /* SaveLinkApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveLinkApp.swift; sourceTree = "<group>"; };
 		F33F03A829044F1100AFAAEF /* AuthenticationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationView.swift; sourceTree = "<group>"; };
@@ -108,6 +110,7 @@
 				F33F03A829044F1100AFAAEF /* AuthenticationView.swift */,
 				F33F03D729046E6E00AFAAEF /* LoginEmailView.swift */,
 				F31526B4290476DF0060490A /* RegisterEmailView.swift */,
+				F31526B6290478710060490A /* DismissView.swift */,
 				F33F03AA29044F1300AFAAEF /* Assets.xcassets */,
 				F33F03D029044FFE00AFAAEF /* GoogleService-Info.plist */,
 				F33F03AC29044F1300AFAAEF /* Preview Content */,
@@ -279,6 +282,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F33F03A929044F1100AFAAEF /* AuthenticationView.swift in Sources */,
+				F31526B7290478710060490A /* DismissView.swift in Sources */,
 				F33F03D829046E6E00AFAAEF /* LoginEmailView.swift in Sources */,
 				F31526B5290476DF0060490A /* RegisterEmailView.swift in Sources */,
 				F33F03A729044F1100AFAAEF /* SaveLinkApp.swift in Sources */,

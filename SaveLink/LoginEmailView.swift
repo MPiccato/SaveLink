@@ -12,7 +12,10 @@ struct LoginEmailView: View {
     @State var textFieldPassword: String = ""
     
     var body: some View {
+        
         VStack {
+            DismissView()
+                .padding(.top,10)
             Group {
                 Text("Bienvenido de nuevo a")
                 Text("Finanzas Flia. Piccato")

@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		F31526B5290476DF0060490A /* RegisterEmailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31526B4290476DF0060490A /* RegisterEmailView.swift */; };
 		F31526B7290478710060490A /* DismissView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31526B6290478710060490A /* DismissView.swift */; };
+		F31526BA29047AFB0060490A /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = F31526B929047AFB0060490A /* FirebaseAuth */; };
 		F33F03A729044F1100AFAAEF /* SaveLinkApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33F03A629044F1100AFAAEF /* SaveLinkApp.swift */; };
 		F33F03A929044F1100AFAAEF /* AuthenticationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33F03A829044F1100AFAAEF /* AuthenticationView.swift */; };
 		F33F03AB29044F1300AFAAEF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F33F03AA29044F1300AFAAEF /* Assets.xcassets */; };
@@ -62,6 +63,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F33F03D6290452A300AFAAEF /* FirebaseAnalyticsSwift in Frameworks */,
+				F31526BA29047AFB0060490A /* FirebaseAuth in Frameworks */,
 				F33F03D4290452A300AFAAEF /* FirebaseAnalytics in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -83,6 +85,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F31526B829047AFB0060490A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F33F039A29044F1100AFAAEF = {
 			isa = PBXGroup;
 			children = (
@@ -90,6 +99,7 @@
 				F33F03B629044F1300AFAAEF /* SaveLinkTests */,
 				F33F03C029044F1300AFAAEF /* SaveLinkUITests */,
 				F33F03A429044F1100AFAAEF /* Products */,
+				F31526B829047AFB0060490A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -162,6 +172,7 @@
 			packageProductDependencies = (
 				F33F03D3290452A300AFAAEF /* FirebaseAnalytics */,
 				F33F03D5290452A300AFAAEF /* FirebaseAnalyticsSwift */,
+				F31526B929047AFB0060490A /* FirebaseAuth */,
 			);
 			productName = SaveLink;
 			productReference = F33F03A329044F1100AFAAEF /* SaveLink.app */;
@@ -617,6 +628,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		F31526B929047AFB0060490A /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F33F03D2290452A300AFAAEF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
 		F33F03D3290452A300AFAAEF /* FirebaseAnalytics */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = F33F03D2290452A300AFAAEF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;

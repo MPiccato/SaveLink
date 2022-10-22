@@ -20,9 +20,15 @@ class AppDelegate: NSObject, UIApplicationDelegate {
 @main
 struct SaveLinkApp: App {
     @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
+    @StateObject var authenticationViewModel = AuthenticationViewModel()
     var body: some Scene {
         WindowGroup {
-            AuthenticationView()
+            if authenticationViewModel.user != nil {
+                HomeView(authenticationViewModel: authenticationViewModel)
+            } else {
+                AuthenticationView(authenticationViewModel: authenticationViewModel)
+            }
+            
         }
     }
 }

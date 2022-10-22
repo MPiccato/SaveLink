@@ -13,6 +13,7 @@
 		F31526C029047C4B0060490A /* AuthenticationFirebaseDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31526BF29047C4B0060490A /* AuthenticationFirebaseDatasource.swift */; };
 		F31526C229047F210060490A /* AuthenticationRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31526C129047F210060490A /* AuthenticationRepository.swift */; };
 		F31526C4290480970060490A /* AuthenticationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31526C3290480970060490A /* AuthenticationViewModel.swift */; };
+		F31526C629048C880060490A /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31526C529048C880060490A /* HomeView.swift */; };
 		F33F03A729044F1100AFAAEF /* SaveLinkApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33F03A629044F1100AFAAEF /* SaveLinkApp.swift */; };
 		F33F03A929044F1100AFAAEF /* AuthenticationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33F03A829044F1100AFAAEF /* AuthenticationView.swift */; };
 		F33F03AB29044F1300AFAAEF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F33F03AA29044F1300AFAAEF /* Assets.xcassets */; };
@@ -49,6 +50,7 @@
 		F31526BF29047C4B0060490A /* AuthenticationFirebaseDatasource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationFirebaseDatasource.swift; sourceTree = "<group>"; };
 		F31526C129047F210060490A /* AuthenticationRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationRepository.swift; sourceTree = "<group>"; };
 		F31526C3290480970060490A /* AuthenticationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewModel.swift; sourceTree = "<group>"; };
+		F31526C529048C880060490A /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		F33F03A329044F1100AFAAEF /* SaveLink.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SaveLink.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F33F03A629044F1100AFAAEF /* SaveLinkApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveLinkApp.swift; sourceTree = "<group>"; };
 		F33F03A829044F1100AFAAEF /* AuthenticationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationView.swift; sourceTree = "<group>"; };
@@ -108,10 +110,28 @@
 			path = AuthenticationViews;
 			sourceTree = "<group>";
 		};
+		F31526C7290493B50060490A /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				F31526C8290493CC0060490A /* Repository */,
+				F31526C3290480970060490A /* AuthenticationViewModel.swift */,
+				F31526BC29047BD20060490A /* AuthenticationViews */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		F31526C8290493CC0060490A /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				F31526BF29047C4B0060490A /* AuthenticationFirebaseDatasource.swift */,
+				F31526C129047F210060490A /* AuthenticationRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
 		F33F039A29044F1100AFAAEF = {
 			isa = PBXGroup;
 			children = (
-				F31526C3290480970060490A /* AuthenticationViewModel.swift */,
 				F33F03A529044F1100AFAAEF /* SaveLink */,
 				F33F03B629044F1300AFAAEF /* SaveLinkTests */,
 				F33F03C029044F1300AFAAEF /* SaveLinkUITests */,
@@ -134,10 +154,9 @@
 			isa = PBXGroup;
 			children = (
 				F33F03A629044F1100AFAAEF /* SaveLinkApp.swift */,
-				F31526BC29047BD20060490A /* AuthenticationViews */,
+				F31526C7290493B50060490A /* Authentication */,
 				F31526B6290478710060490A /* DismissView.swift */,
-				F31526BF29047C4B0060490A /* AuthenticationFirebaseDatasource.swift */,
-				F31526C129047F210060490A /* AuthenticationRepository.swift */,
+				F31526C529048C880060490A /* HomeView.swift */,
 				F33F03AA29044F1300AFAAEF /* Assets.xcassets */,
 				F33F03D029044FFE00AFAAEF /* GoogleService-Info.plist */,
 				F33F03AC29044F1300AFAAEF /* Preview Content */,
@@ -309,6 +328,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F31526C629048C880060490A /* HomeView.swift in Sources */,
 				F33F03A929044F1100AFAAEF /* AuthenticationView.swift in Sources */,
 				F31526C029047C4B0060490A /* AuthenticationFirebaseDatasource.swift in Sources */,
 				F31526B7290478710060490A /* DismissView.swift in Sources */,

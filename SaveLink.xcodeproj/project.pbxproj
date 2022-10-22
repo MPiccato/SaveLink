@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F31526B5290476DF0060490A /* RegisterEmailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31526B4290476DF0060490A /* RegisterEmailView.swift */; };
 		F33F03A729044F1100AFAAEF /* SaveLinkApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33F03A629044F1100AFAAEF /* SaveLinkApp.swift */; };
-		F33F03A929044F1100AFAAEF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33F03A829044F1100AFAAEF /* ContentView.swift */; };
+		F33F03A929044F1100AFAAEF /* AuthenticationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33F03A829044F1100AFAAEF /* AuthenticationView.swift */; };
 		F33F03AB29044F1300AFAAEF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F33F03AA29044F1300AFAAEF /* Assets.xcassets */; };
 		F33F03AE29044F1300AFAAEF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F33F03AD29044F1300AFAAEF /* Preview Assets.xcassets */; };
 		F33F03B829044F1300AFAAEF /* SaveLinkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33F03B729044F1300AFAAEF /* SaveLinkTests.swift */; };
@@ -17,6 +18,7 @@
 		F33F03D129044FFE00AFAAEF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F33F03D029044FFE00AFAAEF /* GoogleService-Info.plist */; };
 		F33F03D4290452A300AFAAEF /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = F33F03D3290452A300AFAAEF /* FirebaseAnalytics */; };
 		F33F03D6290452A300AFAAEF /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = F33F03D5290452A300AFAAEF /* FirebaseAnalyticsSwift */; };
+		F33F03D829046E6E00AFAAEF /* LoginEmailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33F03D729046E6E00AFAAEF /* LoginEmailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,9 +39,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F31526B4290476DF0060490A /* RegisterEmailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterEmailView.swift; sourceTree = "<group>"; };
 		F33F03A329044F1100AFAAEF /* SaveLink.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SaveLink.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F33F03A629044F1100AFAAEF /* SaveLinkApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveLinkApp.swift; sourceTree = "<group>"; };
-		F33F03A829044F1100AFAAEF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F33F03A829044F1100AFAAEF /* AuthenticationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationView.swift; sourceTree = "<group>"; };
 		F33F03AA29044F1300AFAAEF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F33F03AD29044F1300AFAAEF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F33F03B329044F1300AFAAEF /* SaveLinkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SaveLinkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -48,6 +51,7 @@
 		F33F03C129044F1300AFAAEF /* SaveLinkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveLinkUITests.swift; sourceTree = "<group>"; };
 		F33F03C329044F1300AFAAEF /* SaveLinkUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveLinkUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		F33F03D029044FFE00AFAAEF /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; name = "GoogleService-Info.plist"; path = "SaveLink/GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
+		F33F03D729046E6E00AFAAEF /* LoginEmailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginEmailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,7 +105,9 @@
 			isa = PBXGroup;
 			children = (
 				F33F03A629044F1100AFAAEF /* SaveLinkApp.swift */,
-				F33F03A829044F1100AFAAEF /* ContentView.swift */,
+				F33F03A829044F1100AFAAEF /* AuthenticationView.swift */,
+				F33F03D729046E6E00AFAAEF /* LoginEmailView.swift */,
+				F31526B4290476DF0060490A /* RegisterEmailView.swift */,
 				F33F03AA29044F1300AFAAEF /* Assets.xcassets */,
 				F33F03D029044FFE00AFAAEF /* GoogleService-Info.plist */,
 				F33F03AC29044F1300AFAAEF /* Preview Content */,
@@ -272,7 +278,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F33F03A929044F1100AFAAEF /* ContentView.swift in Sources */,
+				F33F03A929044F1100AFAAEF /* AuthenticationView.swift in Sources */,
+				F33F03D829046E6E00AFAAEF /* LoginEmailView.swift in Sources */,
+				F31526B5290476DF0060490A /* RegisterEmailView.swift in Sources */,
 				F33F03A729044F1100AFAAEF /* SaveLinkApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

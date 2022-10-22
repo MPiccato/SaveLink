@@ -10,6 +10,9 @@
 		F31526B5290476DF0060490A /* RegisterEmailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31526B4290476DF0060490A /* RegisterEmailView.swift */; };
 		F31526B7290478710060490A /* DismissView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31526B6290478710060490A /* DismissView.swift */; };
 		F31526BA29047AFB0060490A /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = F31526B929047AFB0060490A /* FirebaseAuth */; };
+		F31526C029047C4B0060490A /* AuthenticationFirebaseDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31526BF29047C4B0060490A /* AuthenticationFirebaseDatasource.swift */; };
+		F31526C229047F210060490A /* AuthenticationRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31526C129047F210060490A /* AuthenticationRepository.swift */; };
+		F31526C4290480970060490A /* AuthenticationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31526C3290480970060490A /* AuthenticationViewModel.swift */; };
 		F33F03A729044F1100AFAAEF /* SaveLinkApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33F03A629044F1100AFAAEF /* SaveLinkApp.swift */; };
 		F33F03A929044F1100AFAAEF /* AuthenticationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33F03A829044F1100AFAAEF /* AuthenticationView.swift */; };
 		F33F03AB29044F1300AFAAEF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F33F03AA29044F1300AFAAEF /* Assets.xcassets */; };
@@ -43,6 +46,9 @@
 /* Begin PBXFileReference section */
 		F31526B4290476DF0060490A /* RegisterEmailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterEmailView.swift; sourceTree = "<group>"; };
 		F31526B6290478710060490A /* DismissView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DismissView.swift; sourceTree = "<group>"; };
+		F31526BF29047C4B0060490A /* AuthenticationFirebaseDatasource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationFirebaseDatasource.swift; sourceTree = "<group>"; };
+		F31526C129047F210060490A /* AuthenticationRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationRepository.swift; sourceTree = "<group>"; };
+		F31526C3290480970060490A /* AuthenticationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewModel.swift; sourceTree = "<group>"; };
 		F33F03A329044F1100AFAAEF /* SaveLink.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SaveLink.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F33F03A629044F1100AFAAEF /* SaveLinkApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveLinkApp.swift; sourceTree = "<group>"; };
 		F33F03A829044F1100AFAAEF /* AuthenticationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationView.swift; sourceTree = "<group>"; };
@@ -92,9 +98,20 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		F31526BC29047BD20060490A /* AuthenticationViews */ = {
+			isa = PBXGroup;
+			children = (
+				F33F03A829044F1100AFAAEF /* AuthenticationView.swift */,
+				F33F03D729046E6E00AFAAEF /* LoginEmailView.swift */,
+				F31526B4290476DF0060490A /* RegisterEmailView.swift */,
+			);
+			path = AuthenticationViews;
+			sourceTree = "<group>";
+		};
 		F33F039A29044F1100AFAAEF = {
 			isa = PBXGroup;
 			children = (
+				F31526C3290480970060490A /* AuthenticationViewModel.swift */,
 				F33F03A529044F1100AFAAEF /* SaveLink */,
 				F33F03B629044F1300AFAAEF /* SaveLinkTests */,
 				F33F03C029044F1300AFAAEF /* SaveLinkUITests */,
@@ -117,10 +134,10 @@
 			isa = PBXGroup;
 			children = (
 				F33F03A629044F1100AFAAEF /* SaveLinkApp.swift */,
-				F33F03A829044F1100AFAAEF /* AuthenticationView.swift */,
-				F33F03D729046E6E00AFAAEF /* LoginEmailView.swift */,
-				F31526B4290476DF0060490A /* RegisterEmailView.swift */,
+				F31526BC29047BD20060490A /* AuthenticationViews */,
 				F31526B6290478710060490A /* DismissView.swift */,
+				F31526BF29047C4B0060490A /* AuthenticationFirebaseDatasource.swift */,
+				F31526C129047F210060490A /* AuthenticationRepository.swift */,
 				F33F03AA29044F1300AFAAEF /* Assets.xcassets */,
 				F33F03D029044FFE00AFAAEF /* GoogleService-Info.plist */,
 				F33F03AC29044F1300AFAAEF /* Preview Content */,
@@ -293,10 +310,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				F33F03A929044F1100AFAAEF /* AuthenticationView.swift in Sources */,
+				F31526C029047C4B0060490A /* AuthenticationFirebaseDatasource.swift in Sources */,
 				F31526B7290478710060490A /* DismissView.swift in Sources */,
 				F33F03D829046E6E00AFAAEF /* LoginEmailView.swift in Sources */,
+				F31526C4290480970060490A /* AuthenticationViewModel.swift in Sources */,
 				F31526B5290476DF0060490A /* RegisterEmailView.swift in Sources */,
 				F33F03A729044F1100AFAAEF /* SaveLinkApp.swift in Sources */,
+				F31526C229047F210060490A /* AuthenticationRepository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
